@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="cv-styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+        <link rel="android-chrome-icon" sizes="192x192" href="favicon/android-chrome-192x192.png">
+        <link rel="android-chrome-icon" sizes="512x512" href="favicon/android-chrome-512x512.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <title>Resume/CV | Parth Shahi</title>
+    </head>
+    <body>
+        <main id="top">
+            <div id="tsparticles" style="position: fixed; inset: 0; z-index: -10;">
+                <canvas data-generated="true" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 0 !important; top: 0px !important; left: 0px !important; pointer-events: none;" aria-hidden="true" width="1586" height="923"></canvas>
+            </div>
+            <div class="toggle-bar">
+                <a href="cv-images/resume.pdf" target="pdf-viewer">
+                    <button id="resume-button" aria-label="View Resume">
+                        <span class="fa-stack">
+                            <i class="fa fa-file"></i>
+                        </span>
+                        Resume
+                    </button>
+                </a>
+                <a href="cv-images/cv.pdf" target="pdf-viewer">
+                    <button id="cv-button" aria-label="View CV">
+                        <span class="fa-stack">
+                            <i class="fa fa-file"></i>
+                        </span>
+                        CV
+                    </button>
+                </a>
+            </div>
+            <div class="cv">
+                <div class="cv-container">
+                    <iframe id="pdf-viewer" src="cv-images/resume.pdf" name="pdf-viewer"></iframe>
+                </div>
+            </div>
+        </main>
+        <script>
+            // Particale animation
+            function setupParticlesBackground() {
+                tsParticles.load("tsparticles", {
+                particles: {
+                    links: {
+                    enable: true,
+                    distance: 100,
+                    opacity: 0.5,
+                    },
+                    number: {
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                    value: 55,
+                    },
+                    size: {
+                    value: 3,
+                    },
+                    move: {
+                    direction: 'none',
+                    enable: true,
+                    outMode: 'bounce',
+                    random: false,
+                    speed: 2,
+                    straight: false,
+                    },
+                    opacity: {
+                    value: 0.5,
+                    },
+                },
+                retina_detect: true,
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js" integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async defer onload="setupParticlesBackground()"></script>
+    </body>
+</html>

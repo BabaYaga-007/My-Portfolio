@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: "Roboto";
+    background-color: #1b1b1b;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+
+header {
+    background-color: transparent;
+    color: "white";
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.scrolled {
+    background-color: #1b1b1b !important;
+    box-shadow:
+    0px 3px 1px -2px rgba(0,0,0,.2),
+    0px 2px 2px 0px rgba(0,0,0,.14),
+    0px 1px 5px 0px rgba(0,0,0,.12);
+}
+
+nav {
+    display: flex;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px;
+    font-size: 15.75px;
+}
+
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+
+.left-section > a {
+    text-decoration: none;
+    color: white;
+    font-size: 22.5px;
+}
+
+.icon-button {
+    border-radius: 8px;
+    background-color: transparent;
+    border: none;
+}
+
+/* Navbar drawer */
+#navbar-drawer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    max-width: unset;
+    max-height: unset;
+    background: #1b1b1b;
+    color: #fff;
+    text-align: right;
+}
+
+.navbar-drawer-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navbar-drawer-links a {
+    font-size: 22.5px;
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#intro-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+    width: 100%;
+    height: calc(100vh - 207.75px);
+    color: #fff;
+}
+
+#display-picture img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#intro-name {
+    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 72px;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+/* Contact us */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1b1b1b;
+}
+
+content {
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#contact-us-intro {
+    flex-basis: 350px;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 30px 60px;
+    font-size: 1.25rem;
+}
+
+#contact-us-intro h1 {
+    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 72px;
+}
+
+.container {
+    flex-basis: 350px;
+    flex-grow: 1;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #1b1b1b;
+    padding: 20px;
+    margin: 30px 60px;
+    box-shadow:
+    0px 3px 1px -2px rgba(0,0,0,5),
+    0px 2px 2px 0px rgba(0,0,0,5),
+    0px 1px 5px 0px rgba(0,0,0,5);
+}
+
+/* Footer */
+footer {
+    padding: 16px 0 0;
+}
+
+#site-map {
+    dispay: flex;
+    padding: 8px 24px;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+#site-map-heading h5 {
+    font-size: 26px;
+    color: #fff;
+    margin: 15px 0 12px;
+}
+
+#site-map-element a {
+    display: flex;
+    font-size: 15.75px;
+    color: #00acff;
+    flex-direction: column;
+    padding: 4px 0;
+    text-decoration: none;
+}
+
+#footer-name {
+    font-size: 14.4px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 8px;
+
+}
+
+#footer-name p{margin: 0;}
+
+/* Media query */
+@media screen and (min-width: 428px) and (max-height: 532px) {
+    #intro-main {height: 100%}
+}
+
+@media screen and (max-width: 424px) and (max-height: 564px) {
+    #intro-main {height: 100%;}
+}
+
+@media screen and (max-width: 375px) and (max-height: 652px) {
+    #intro-main {
+        height: 100%;
+        padding-bottom: 2px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #drawer-open {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header nav a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .my-work-box {
+        display: block;
+        width: calc(100% - 20px); /* For leaving 20px margin on the right side of boxes */
+        margin: 10px auto;
+    }
+
+    /* Hide scrollbar for Firefox, Chrome, Safari */
+    main {
+    overflow: hidden;
+    }
+
+    /* Hide scrollbar for IE, Edge */
+    main {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    main::-webkit-scrollbar {
+    display: none;
+    }
+}
+
+}

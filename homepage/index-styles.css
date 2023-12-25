@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: "Roboto";
+    background-color: #1b1b1b;
+    transition: background-color 0.3s ease;
+}
+
+
+header {
+    background-color: transparent;
+    color: "white";
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.scrolled {
+    background-color: #1b1b1b !important;
+    box-shadow:
+    0px 3px 1px -2px rgba(0,0,0,.2),
+    0px 2px 2px 0px rgba(0,0,0,.14),
+    0px 1px 5px 0px rgba(0,0,0,.12);
+}
+
+nav {
+    display: flex;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px;
+    font-size: 15.75px;
+}
+
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+
+.left-section > a {
+    text-decoration: none;
+    color: white;
+    font-size: 22.5px;
+}
+
+.icon-button {
+    border-radius: 8px;
+    background-color: transparent;
+    border: none;
+}
+
+/* Navbar drawer */
+#navbar-drawer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    max-width: unset;
+    max-height: unset;
+    background: #1b1b1b;
+    color: #fff;
+    text-align: right;
+}
+
+.navbar-drawer-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navbar-drawer-links a {
+    font-size: 22.5px;
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#intro-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+    width: 100%;
+    height: calc(100vh - 207.75px);
+    color: #fff;
+}
+
+#display-picture img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#intro-name {
+    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 72px;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+/* Social media logos */
+#logos {margin: 32px 0 0;}
+
+#logos img {
+    width: 24px;
+    height: 24px;
+    margin: 0 4px;
+}
+
+#intro-main h4 {font-size: 27px;}
+
+#about-me {padding: 53.75px 0 0;}
+
+#about-me-container {
+
+    padding: 18px 24px;
+    background-color: #fff;
+    color: #333;
+    font-size: 27px;
+}
+
+#intro-hey {
+    margin: 18px 0 26.1px;
+}
+
+#intro-desc {
+    margin: 0 0 26.1px;
+}
+
+/* Portfolio */
+#portfolio {padding: 53.75px 0 0;}
+
+#portfolio-heading {
+    padding: 75px 0;
+    color: white;
+    text-align: center;
+}
+
+#portfolio-heading h4 {
+    font-size: 38.25px;
+}
+
+#portfolio-container {
+    background-color: #fff;
+    color: #333;
+    padding: 24px 0;
+}
+
+/* Work container */
+#my-work-heading {text-align: center;}
+
+#my-work-heading h5 {
+    margin: 20px 0;
+    font-size: 27px;
+}
+
+#my-work-container {
+    background-color: #fff;
+    text-align: center;
+}
+
+.my-work-box {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    background: rgb(10, 116, 219);
+    margin: 10px;
+    padding: 16px;
+    display: inline-block; /* To keep the boxes in single line if possible */
+    vertical-align: top;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-work-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 0 8px;
+}
+
+.my-work-content {
+    text-align: left;
+    margin: 0 0 26.1px;
+    color: white;
+}
+
+.my-work-content h6 {font-size: 22.5px;}
+
+.my-work-content p {font-size: 15.75px;}
+
+/* Timeline event */
+#timeline-heading h5 {
+    font-size: 27px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.timeline {
+    margin: 50px auto;
+    margin-top: 0;
+    width: 80%;
+}
+
+.timeline-element {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline-element[data-animation="left"] {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.timeline-element[data-animation="left"].in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-element[data-animation="right"] {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.timeline-element[data-animation="right"].in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.content {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.subtitle p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* Footer */
+footer {padding: 16px 0 0;}
+
+#site-map {
+    dispay: flex;
+    background-color: rgba(0,0,0, 0.4);
+    padding: 8px 24px;
+}
+
+#site-map-heading h5 {
+    font-size: 26px;
+    color: #fff;
+    margin: 15px 0 12px;
+}
+
+#site-map-element a {
+    display: flex;
+    font-size: 15.75px;
+    color: #00acff;
+    flex-direction: column;
+    padding: 4px 0;
+    text-decoration: none;
+}
+
+#footer-name {
+    font-size: 14.4px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 8px;
+    opacity: 0.8;
+}
+
+#footer-name p{margin: 0;}
+
+/* Media query */
+@media screen and (min-width: 428px) and (max-height: 532px) {
+    #intro-main {height: 100%}
+}
+
+@media screen and (max-width: 424px) and (max-height: 564px) {
+    #intro-main {height: 100%;}
+}
+
+@media screen and (max-width: 375px) and (max-height: 652px) {
+    #intro-main {
+        height: 100%;
+        padding-bottom: 2px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #drawer-open {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header nav a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .my-work-box {
+        display: block;
+        width: calc(100% - 20px); /* For leaving 20px margin on the right side of boxes */
+        margin: 10px auto;
+    }
+
+    /* Hide scrollbar for Firefox, Chrome, Safari */
+    main {
+    overflow: hidden;
+    }
+
+    /* Hide scrollbar for IE, Edge */
+    main {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    main::-webkit-scrollbar {
+    display: none;
+    }
+}

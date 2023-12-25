@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <link href="index-styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+        <link rel="android-chrome-icon" sizes="192x192" href="favicon/android-chrome-192x192.png">
+        <link rel="android-chrome-icon" sizes="512x512" href="favicon/android-chrome-512x512.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Parth Shahi | Student, Coding enthusiast & Cuber</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="left-section">
+                <a href="#">Parth Shahi</a>
+            </div>
+            <nav>
+                <a href="#about-me">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+                <a href="cv.html">Resume/CV</a>
+                <button id="drawer-open" class="icon-button" aria-label="Open Navigation Drawer">
+                    <img src="index-images/navbar.png" alt="Navigation drawer button" style="width:30.25px; height:auto;">
+                </button>
+            </nav>
+            <dialog id="navbar-drawer">
+                <button id="drawer-close" class="icon-button" aria-label="Close Navigation Drawer">
+                    <img src="index-images/close-icon.png" alt="Close button" style="">
+                </button>
+                <div class="navbar-drawer-links">
+                    <a href="#about-me">About Me</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cv.html">Resume/CV</a>
+                </div>
+            </dialog>
+        </header>
+        <main id="top">
+            <div id="tsparticles" style="position: fixed; inset: 0; z-index: -10;">
+                <canvas data-generated="true" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 0 !important; top: 0px !important; left: 0px !important; pointer-events: none;" aria-hidden="true" width="1586" height="923"></canvas>
+            </div>
+            <div id="intro-main">
+                <div id="display-picture">
+                    <img src="index-images/dp.jpg" alt="Display picture">
+                </div>
+                <h1 id="intro-name">Parth Shahi</h1>
+                <h4> Student, Coding Enthusiast & Cuber</h4>
+                <div id="logos">
+                    <a href="https://github.com/BabaYaga-007" target="_blank"><img src="index-images/github-mark-white.png" alt="Github"></a>
+                    <a href="https://discord.com/users/694491066937901087" target="_blank"><img src="index-images/discord-mark-white.png" alt="Discord" style="width:auto;"></a>
+                    <a href="https://www.linkedin.com/in/parth-shahi-6e23" target="_blank"><img src="index-images/linkedin-app-white-icon.png" alt="Linkdin"></a>
+                    <a href="mailto:onemoleequals@gmail.com"><img src="index-images/gmail-logo-white.png" alt="Gmail" style="width:auto;"></a>
+                </div>
+            </div>
+            <div id="about-me">
+                <div id="about-me-container">
+                    <div id="intro-hey">
+                        <p><strong>Hey!</strong></p>
+                    </div>
+                    <div id="intro-desc">
+                        <p>I'm Parth Shahi from India!<br>
+                        I love exploring Chemistry, as well as solving coding problems, solving cubes and learning new things!<br>
+                        Feel free to get in touch or take a look at my work and skills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="portfolio">
+                <div id="portfolio-heading">
+                    <h4>Porfolio</h4>
+                </div>
+                <div id="portfolio-container">
+                    <div id="my-work-heading">
+                        <h5>My work</h5>
+                    </div>
+
+                    <div id="my-work-container">
+                        <div id="my-work-1" class="my-work-box" style="background-color: darkslateblue;">
+                            <div id="my-work-1-img">
+                                <img src="index-images/md.png" alt="Computer screen">
+                            </div>
+                            <div id="my-work-1-desc" class="my-work-content">
+                                <h6><strong>Molecular Docking</strong></h6>
+                                <p>
+                                    Molecular Docking Analysis of Biginelli Derivatives against BRAF Protein was done by studying the binding affinities and interations.
+                                    Conducted a Master's dissertation analyzing 300 Biginelli derivatives against BRAF protein.
+                                    Identified top ligands with superior binding affinities for targeted cancer therapy.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="my-work-2" class="my-work-box" style="background-color: crimson;">
+                            <div id="my-work-2-img">
+                                <img src="index-images/pen_paper.png" alt="Pen and paper">
+                            </div>
+                            <div id="my-work-2-desc" class="my-work-content">
+                                <h6><strong>Review Paper</strong></h6>
+                                <p>
+                                    A comparative study on the synthesis of 5-fluorooxindole via various pathways.
+                                    Authored a review paper on 5-fluorooxindole synthesis, crucial in sunitinib production.
+                                    Explored diverse synthesis methods and highlighted compound's significance in drug synthesis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="timeline">
+                        <div id="timeline-heading">
+                            <h5>Timeline</h5>
+                        </div>
+                        <div class="timeline-element work" data-animation="left">
+                          <div class="content" style="background: rgb(33, 150, 243); color: #fff;">
+                            <span class="date">August 2023 - present</span>
+                            <h3 class="title">CS50x</h3>
+                            <h4 class="subtitle">Remote, Harvard College</h4>
+                            <p>
+                                An entry-level course taught by David J. Malan, CS50x teaches students how to think algorithmically and solve problems efficiently.
+                                Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="timeline-element work" data-animation="right">
+                            <div class="content" style="background: rgb(33, 150, 243); color: #fff;">
+                                <span class="date">May 2021 - May 2023</span>
+                                <h3 class="title">Master of Science (Chemistry)</h3>
+                                <h4 class="subtitle">School of Sciences, Gujarat University</h4>
+                                <p>
+                                    Completed my post grad as an Organic chemist.<br>
+                                    Graduated with high honors.<br>
+                                    Won a Bronze and Silver medal (as a team) in Tug-of-war during Inter-College Tournament.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-element work" data-animation="left">
+                            <div class="content" style="background: rgb(33, 150, 243); color: #fff;">
+                                <span class="date">April 2023</span>
+                                <h3 class="title">Molecular Docking</h3>
+                                <h4 class="subtitle">School of Sciences, Gujarat University</h4>
+                                <p>
+                                    Thesis: "Molecular Docking Analysis of Biginelli Derivatives against BRAF Protein: A Study of Binding Affinities and Interactions"<br>
+                                    Performed molecular docking of 300 Biginelli derivatives against BRAF protein.<br>
+                                    After this project I leaned towards computational chemistry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-element work" data-animation="right">
+                            <div class="content" style="background: rgb(33, 150, 243); color: #fff;">
+                                <span class="date">April 2023</span>
+                                <h3 class="title">Scientific Writing</h3>
+                                <h4 class="subtitle">School of Sciences, Gujarat University</h4>
+                                <p>
+                                    Review Paper: "A Comparative Study on the Synthesis of 5-Fluorooxindole via Various Pathways"<br>
+                                    Authored a review paper on 5-fluorooxindole synthesis, crucial in sunitinib production.<br>
+                                    This taught me a lot about scientific writing, literature search, how citations work and lot more.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-element work" data-animation="left">
+                            <div class="content" style="background: rgb(33, 150, 243); color: #fff;">
+                                <span class="date">May 2018 - May 2021</span>
+                                <h3 class="title">Bachelor of Science (Chemistry)</h3>
+                                <h4 class="subtitle">KKSJMSC, Gujarat University</h4>
+                                <p>
+                                    Completed my bachelor's degree in Chemistry, along with Maths and Physics as additional subjects.<br>
+                                    Graduated with First class.<br>
+                                    Played in the Football team during Inter-College Tournament.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-element work" data-animation="right">
+                            <div class="content" style="background: rgb(33, 150, 243); color: #fff;">
+                                <span class="date">2018</span>
+                                <h3 class="title">How it all started...</h3>
+                                <h4 class="subtitle"></h4>
+                                <p>
+                                    This is when I finished my schooling from Hebron and decided to take Chemistry as a subject
+                                    I wanted to dedicate my further education to, and maybe my career as well.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add more timeline elements here -->
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="site-map">
+                <div id="site-map-heading">
+                    <h5>Site map</h5>
+                </div>
+                <div id="site-map-element">
+                    <a href="#about-me">About me</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cv.html">Resume/CV</a>
+                </div>
+            </div>
+
+            <div id="footer-name">
+                <p>Parth Shahi</p>
+            </div>
+        </footer>
+        <script>
+            // Navigation bar
+            document.addEventListener('DOMContentLoaded', function() {
+                // Scroll animation
+                var header = document.querySelector('header');
+
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                });
+
+                // Navbar Drawer
+                const drawer = document.getElementById("navbar-drawer");
+                const drawerOpen = document.getElementById("drawer-open");
+                const drawerClose = document.getElementById("drawer-close");
+
+                // Open drawer
+                drawerOpen.addEventListener("click", () => {
+                    drawer.showModal();
+                });
+
+                // Close drawer by selecting any query
+                document.querySelectorAll("#drawer-close, #navbar-drawer a").forEach(element => {
+                    element.addEventListener("click", () => {
+                        drawer.close();
+                    });
+                });
+            });
+        </script>
+        <script>
+            // Particale animation
+            function setupParticlesBackground() {
+                tsParticles.load("tsparticles", {
+                particles: {
+                    links: {
+                    enable: true,
+                    distance: 100,
+                    opacity: 0.5,
+                    },
+                    number: {
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                    value: 55,
+                    },
+                    size: {
+                    value: 3,
+                    },
+                    move: {
+                    direction: 'none',
+                    enable: true,
+                    outMode: 'bounce',
+                    random: false,
+                    speed: 2,
+                    straight: false,
+                    },
+                    opacity: {
+                    value: 0.5,
+                    },
+                },
+                retina_detect: true,
+                });
+            }
+        </script>
+        <script>
+            // Timeline element: when enters the viewport
+            document.addEventListener("DOMContentLoaded", function () {
+                // Options for the Intersection Observer
+                const options = {
+                    root: null,
+                    rootMargin: "0px",
+                    threshold: 0.5,
+                };
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("in-view");
+                        }
+                    });
+                }, options);
+
+                const timelineElements = document.querySelectorAll(".timeline-element");
+                timelineElements.forEach((element) => {
+                    observer.observe(element);
+                });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js" integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async defer onload="setupParticlesBackground()"></script>
+    </body>
+</html>
